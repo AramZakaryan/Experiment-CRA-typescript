@@ -1,11 +1,12 @@
-import React, {LegacyRef, MutableRefObject, useRef, useState} from 'react';
+import React from 'react';
+import "./state"
 
 const App = () => {
 
 
     return (
         <>
-               kuku
+               CuCu
 
         </>
     );
