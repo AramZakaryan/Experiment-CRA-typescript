@@ -1,5 +1,5 @@
 import React from 'react';
-import "./state"
+import "./script"
 
 const App = () => {
 
