@@ -1,15 +1,11 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import "./script"
+import {MyComponent} from "./MyComponent";
 
 const App = () => {
-
-
-    return (
-        <>
-               CuCu
-
-        </>
-    );
+    return (<>
+        <MyComponent/>
+    </>);
 }
 
 export default App;
