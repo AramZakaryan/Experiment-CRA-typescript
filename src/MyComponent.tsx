@@ -1,26 +1,29 @@
-
-
-export const MyComponent = () =>{
+export const MyComponent = () => {
     return (<>
     </>)
 }
 
-class Human {
-    props:{name:string, age:number}
-    constructor(props:{name:string, age:number}) {
-        this.props=props
-    }
+
+type BigType = {
+    a: number
+    b: number
 }
 
-class Man extends Human{
-    ageRange: string
-    constructor(props:{name:string, age:number,ageRange:string}) {
-        super(props);
-        this.ageRange= props.ageRange
-    }
-
+type SmallType = {
+    a: number
 }
 
-const gago = new Man({name:"Gago",age:56, ageRange:" newGen" })
+const big: BigType = {
+    a: 100,
+    b: 200
+}
 
-console.log(gago)
+const small: SmallType = {
+    a: 10
+}
+
+const foo = (arg:SmallType) =>{
+    console.log(arg)
+}
+
+foo(big)
